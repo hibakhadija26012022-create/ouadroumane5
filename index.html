@@ -120,9 +120,11 @@
         /* Fix developer badge positioning */
         @media (max-width: 480px) {
             .fixed.top-16.left-4 { 
-                top: 5rem !important; 
+                position: fixed !important;
+                top: 4rem !important; 
                 left: 1rem !important;
                 max-width: calc(100vw - 2rem);
+                z-index: 102 !important;
             }
         }
     </style>
