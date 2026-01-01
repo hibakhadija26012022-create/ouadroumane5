@@ -207,16 +207,20 @@
     </aside>
 
     <!-- Bottom Nav (Mobile) -->
-    <nav class="fixed bottom-0 left-0 w-full glass-effect z-[100] lg:hidden px-2 py-3 flex justify-around border-t border-slate-200 dark:border-slate-800 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.1)]">
-        <button onclick="switchTab('home')" id="m-nav-home" class="m-nav-btn flex flex-col items-center gap-1 text-emerald-500 mobile-nav-active transition-all"><i data-lucide="home" size="22"></i><span class="text-[9px] font-bold">الرئيسية</span></button>
-        <button onclick="switchTab('lessons')" id="m-nav-lessons" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all"><i data-lucide="play-circle" size="22"></i><span class="text-[9px] font-bold">الدروس</span></button>
-        <button onclick="switchTab('quiz')" id="m-nav-quiz" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all"><i data-lucide="zap" size="22"></i><span class="text-[9px] font-bold">تحدي</span></button>
-        <button onclick="switchTab('library')" id="m-nav-library" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all"><i data-lucide="library" size="22"></i><span class="text-[9px] font-bold">المكتبة</span></button>
-        <button onclick="switchTab('leaderboard')" id="m-nav-leaderboard" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all"><i data-lucide="trophy" size="22"></i><span class="text-[9px] font-bold">التميز</span></button>
-        <button onclick="handleLogout()" class="m-nav-btn flex flex-col items-center gap-1 text-red-400 transition-all"><i data-lucide="log-out" size="22"></i><span class="text-[9px] font-bold">خروج</span></button>
-        <div class="flex flex-col items-center gap-1 text-emerald-600">
-            <i data-lucide="terminal" size="22"></i>
-            <span class="text-[9px] font-bold">شاوشي</span>
+    <nav class="fixed bottom-0 left-0 w-full glass-effect z-[100] lg:hidden px-4 py-4 flex justify-between items-center border-t border-slate-200 dark:border-slate-800 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.1)]">
+        <div class="flex gap-3">
+            <button onclick="switchTab('home')" id="m-nav-home" class="m-nav-btn flex flex-col items-center gap-1 text-emerald-500 mobile-nav-active transition-all transform hover:scale-110 active:scale-95"><i data-lucide="home" size="24"></i><span class="text-[9px] font-bold">الرئيسية</span></button>
+            <button onclick="switchTab('lessons')" id="m-nav-lessons" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all transform hover:scale-110 active:scale-95"><i data-lucide="play-circle" size="24"></i><span class="text-[9px] font-bold">الدروس</span></button>
+            <button onclick="switchTab('quiz')" id="m-nav-quiz" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all transform hover:scale-110 active:scale-95"><i data-lucide="zap" size="24"></i><span class="text-[9px] font-bold">تحدي</span></button>
+            <button onclick="switchTab('library')" id="m-nav-library" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all transform hover:scale-110 active:scale-95"><i data-lucide="library" size="24"></i><span class="text-[9px] font-bold">المكتبة</span></button>
+            <button onclick="switchTab('leaderboard')" id="m-nav-leaderboard" class="m-nav-btn flex flex-col items-center gap-1 text-slate-400 transition-all transform hover:scale-110 active:scale-95"><i data-lucide="trophy" size="24"></i><span class="text-[9px] font-bold">التميز</span></button>
+        </div>
+        <div class="flex items-center gap-3">
+            <button onclick="handleLogout()" class="m-nav-btn flex flex-col items-center gap-1 text-red-500 hover:text-red-600 transition-all transform hover:scale-110 active:scale-95"><i data-lucide="log-out" size="24"></i><span class="text-[9px] font-bold">خروج</span></button>
+            <div class="flex flex-col items-center gap-1 text-emerald-600 hover:text-emerald-700 transition-all transform hover:scale-110 active:scale-95">
+                <i data-lucide="terminal" size="24"></i>
+                <span class="text-[9px] font-bold">شاوشي</span>
+            </div>
         </div>
     </nav>
 
